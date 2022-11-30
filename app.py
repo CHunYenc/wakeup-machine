@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(
     level=logging.INFO,
-    filename="log.txt",
+    filename="scheduler.log",
     filemode="w",
     format="[%(asctime)s] %(levelname)s - %(message)s")
 
