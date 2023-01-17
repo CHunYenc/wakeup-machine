@@ -25,6 +25,16 @@ def scheduled_job():
 
 
 if __name__ == "__main__":
+    logging.info("====== RUN APSCHEDULER")
+    logging.info(f"APSCHEDULER_YEAR = {variables.APSCHEDULER_YEAR}")
+    logging.info(f"APSCHEDULER_MONTH = {variables.APSCHEDULER_MONTH}")
+    logging.info(f"APSCHEDULER_DAY = {variables.APSCHEDULER_DAY}")
+    logging.info(f"APSCHEDULER_WEEK = {variables.APSCHEDULER_WEEK}")
+    logging.info(f"APSCHEDULER_DAY_OF_WEEK = {variables.APSCHEDULER_DAY_OF_WEEK}")
+    logging.info(f"APSCHEDULER_HOUR = {variables.APSCHEDULER_HOUR}")
+    logging.info(f"APSCHEDULER_MINUTE = {variables.APSCHEDULER_MINUTE}")
+    logging.info(f"APSCHEDULER_SECOND = {variables.APSCHEDULER_SECOND}")
+    logging.info("====== DONE")
     # run once
     scheduled_job()
     # init Scheduler
